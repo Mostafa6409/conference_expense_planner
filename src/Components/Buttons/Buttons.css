@@ -1,0 +1,19 @@
+.btn.primary{
+    padding: 1% 2%;
+}
+
+.btn.secondary{
+    background-color: transparent;
+    color:rgb(4, 4, 47);
+    border:none;
+
+    font-size: large;
+}
+
+.btn.thirdary{
+ /* width: 100%; */
+    background-color:blue;
+    border:none;
+    color:white;
+    padding: 8%;
+}

@@ -1,0 +1,17 @@
+.start-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 0 5%;
+  color: #0d0505;
+}
+.start-left{
+    width: 50%;
+    margin: 0 10%;
+}
+
+.start-right{
+    width: 50%;
+    margin: 0 10%;
+}

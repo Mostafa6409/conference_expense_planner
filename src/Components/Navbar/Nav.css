@@ -1,0 +1,23 @@
+.navbar{
+    padding: 1.5%;
+    background-color: #7e626208;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Logo{
+    font-size: large;
+    font-weight: bold;
+}
+.nav-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    width:60%;
+}
+
+.details-btn{
+    /* background-color: black; */
+    width: 10%;
+}
+
