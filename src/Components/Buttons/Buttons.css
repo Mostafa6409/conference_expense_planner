@@ -1,19 +1,55 @@
-.btn.primary{
-    padding: 1% 2%;
+.btn.primary {
+  padding: 4%;
+  background: linear-gradient(to left, rgb(100, 24, 7) 50%, #b53131 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  border: none;
+  color: white;
+  font-size: large;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.btn.primary:hover {
+  background-position: right bottom; /* shifts gradient to show new color */
 }
 
 .btn.secondary{
     background-color: transparent;
-    color:rgb(4, 4, 47);
+    color:rgba(0, 0, 7, 0.989);
     border:none;
-
-    font-size: large;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
 }
 
 .btn.thirdary{
- /* width: 100%; */
-    background-color:blue;
+    border-radius:5px;
+    cursor: pointer;
+    background: linear-gradient(to left, rgb(100, 24, 7) 50%, #b53131 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
     border:none;
     color:white;
-    padding: 8%;
+    padding: 10%;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.4s ease;
+}
+
+.btn.thirdary:hover {
+  background-position: right bottom; /* shifts gradient to show new color */
+}
+
+.btn.forth{
+  color: white;
+  background-color: #b53131;
+  font-size: larger;
+  /* font-weight: bolder; */
+  border: none;
+  margin: 3%;
+  padding: 2% 3%;
+  border-radius: 5px;
+  cursor: pointer;
 }

@@ -1,0 +1,87 @@
+{
+  "venues": [
+    {
+      "id": 1,
+      "name": "Conference Room",
+      "img": "/images/conference_room.jpg",
+      "capacity": 15,
+      "price": 1500
+    },
+    {
+      "id": 2,
+      "name": "Auditorium Hall",
+      "img": "/images/auditorium_room.jpg",
+      "capacity": 200,
+      "price": 5500
+    },
+    {
+      "id": 3,
+      "name": "Presentation Room",
+      "img": "/images/presentation_room.jpg",
+      "capacity": 50,
+      "price": 3500
+    },
+    {
+      "id": 4,
+      "name": "Large Meeting Room",
+      "img": "/images/large_meeting_room.jpg",
+      "capacity": 10,
+      "price": 1000
+    },
+    {
+      "id": 5,
+      "name": "Small Meeting Room",
+      "img": "/images/small_meeting_room.jpg",
+      "capacity": 5,
+      "price": 800
+    }
+  ],
+  "meals":[
+     {
+      "id": 1,
+      "name": "Breakfast",
+      "price": 50
+    },
+    {
+      "id": 2,
+      "name": "High Tea",
+      "price": 25
+    },
+    {
+      "id": 3,
+      "name": "Lunch",
+      "price": 65
+    },
+    {
+      "id": 4,
+      "name": "Dinner",
+      "price": 70
+    }
+  ],
+  "addons":[
+    {
+      "id": 1,
+      "img": "/images/projector.jpg",
+      "name": "Projector",
+      "price": 100
+    },
+    {
+      "id": 2,
+      "img": "/images/whiteboard.png",
+      "name": "Whiteboard",
+      "price": 50
+    },
+    {
+      "id": 3,
+      "img": "/images/speakers.jpg",
+      "name": "Speakers",
+      "price": 200
+    },
+    {
+      "id": 4,
+      "img": "/images/mic.jpg",
+      "name": "Microphone",
+      "price": 150
+    }
+  ]
+}

@@ -9,21 +9,27 @@ function Start(){
     <div className="start-container">
         <div className="start-left">
          <h1>Conference Expense Planner</h1>
+         
          <p>Welcome to the Conference Expense Planner!</p>
-         <Buttons label="Get Started" onClick={() => navigate('/Dashboard')} />
+         <Buttons label="Get Started" onClick={() => navigate('/Dashboard')} type="primary"/>
         </div>
 
         <div className="start-right">
-         <h2>Welcome to BudgetEase Solutions</h2>
          <p>
-          Your trusted partner in simplifying budget management and financial solutions.
-          We understand the importance of effective planning and provide intuitive,
-          user-friendly tools to meet diverse needs.
+          Welcome to BudgetEase Solutions, your trusted partner in simplifying budget management
+           and financial solutions. At BudgetEase, we understand the importance of effective budget 
+           planning and strive to provide intuitive, user-friendly solution, to meet the diverse needs of our clients.
          </p>
          <p>
-          Our mission is to make budgeting effortless and accessible for everyone —
-          whether you're a small business owner, a busy professional, or an individual
-          managing personal finances.
+          With a commitment to efficiency and innovation,
+           we empower individuals and businesses to take control of their finances and achieve their goals with ease.
+         </p>
+         <p>
+            At BudgetEase Solutions, 
+            our mission is to make budgeting effortless and accessible for everyone.
+             Whether you're a small business owner, a busy professional, 
+             or an individual looking to manage your personal finances, 
+             we offer tailored solutions to streamline your budgeting process.
          </p>
         </div>
     </div>

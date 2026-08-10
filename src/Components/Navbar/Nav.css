@@ -1,19 +1,17 @@
 .navbar{
     padding: 1.5%;
-    background-color: #7e626208;
+    background-color: #f7eded2e;
     margin-bottom: 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
-.Logo{
-    font-size: large;
-    font-weight: bold;
-}
+
 .nav-buttons{
     display: flex;
     justify-content: space-evenly;
-    width:60%;
+    width:70%;
 }
 
 .details-btn{
@@ -21,3 +19,9 @@
     width: 10%;
 }
 
+.nav-link{
+ text-decoration: none;
+     font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+}
