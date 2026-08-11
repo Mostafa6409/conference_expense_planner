@@ -5,10 +5,12 @@ import Venue from './Products/Venue.js'
 import Meal from './Products/Meal.js'
 import AddOn from './Products/AddOn.js'
 import Details from './Details/Details.js'
+import { CartProvider } from "./Products/CartContext";
 // import './App.css'
 
 function App() {
   return (
+    <CartProvider>
     <Routes>
       <Route path="/" element={<Start />} />
       <Route path="/dashboard" element={<Dashboard />} />
@@ -17,6 +19,7 @@ function App() {
       <Route path="/addon" element={<AddOn />} />
       <Route path="/details" element={<Details />} />
     </Routes>
+    </CartProvider>
   );
 }
 

@@ -3,25 +3,11 @@ import { useState, useEffect } from "react";
 import Buttons from '../Components/Buttons/Buttons.js';
 import './Products.css';
 import { AiFillCaretLeft,  AiFillCaretRight} from "react-icons/ai";
-import { increase, decrease } from "./ProductsContext.js"
+import { useCart } from './CartContext.js';
 
 function Venue(){
 
-const [count, setCount] = useState({});
-// const increase = (venueId) => {
-//     setCount((prev) => ({
-//       ...prev,
-//       [venueId]: (prev[venueId] || 0) + 1,
-//     }));
-//   };
-
-//   const decrease = (venueId) => {
-//     setCount((prev) => ({
-//       ...prev,
-//       [venueId]: Math.max((prev[venueId] || 1) - 1, 0),
-//     }));
-//   };
-
+const { items, setItems, Increase, Decrease } = useCart();
 const [venues, setVenues] = useState([]);
 
 useEffect(() => {
@@ -29,6 +15,21 @@ useEffect(() => {
       .then((res) => res.json())
       .then((data) => setVenues(data.venues));
   }, []);
+
+  const getCount = (id) => {
+    const found = items.find((i) => i.id === id);
+    return found ? found.count : 0;
+  };
+
+  const handleIncrease = (venue) => {
+    const exists = items.find((i) => i.id === venue.id);
+    if (exists) {
+      Increase(venue.id);
+    } else {
+      setItems((prev) => [...prev, { ...venue, count: 1 }]);
+    }
+  };
+
 
     return(
         <>
@@ -42,9 +43,9 @@ useEffect(() => {
                         <h2>{venue.name}</h2>
                         <p>Capacity: {venue.capacity}</p>
                         <p>Price: ${venue.price}</p>
-                        <Buttons type="forth" label={<AiFillCaretLeft/>} onClick={() => setCount((prev) => decrease(prev, venue.id))}></Buttons>
-                        <span>{count[venue.id] || 0}</span>
-                        <Buttons type="forth" label={<AiFillCaretRight/>} onClick={() => setCount((prev) => increase(prev, venue.id))}></Buttons>
+                        <Buttons type="forth" label={<AiFillCaretLeft/>} onClick={() => Decrease(venue.id)}></Buttons>
+                        <span>{getCount(venue.id)}</span>
+                        <Buttons type="forth" label={<AiFillCaretRight/>} onClick={() => handleIncrease(venue)}></Buttons>
                     </div>
                 ))}
             

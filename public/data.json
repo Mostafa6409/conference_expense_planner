@@ -38,47 +38,47 @@
   ],
   "meals":[
      {
-      "id": 1,
+      "id": 6,
       "name": "Breakfast",
       "price": 50
     },
     {
-      "id": 2,
+      "id": 7,
       "name": "High Tea",
       "price": 25
     },
     {
-      "id": 3,
+      "id": 8,
       "name": "Lunch",
       "price": 65
     },
     {
-      "id": 4,
+      "id": 9,
       "name": "Dinner",
       "price": 70
     }
   ],
   "addons":[
     {
-      "id": 1,
+      "id": 10,
       "img": "/images/projector.jpg",
       "name": "Projector",
       "price": 100
     },
     {
-      "id": 2,
+      "id": 11,
       "img": "/images/whiteboard.png",
       "name": "Whiteboard",
       "price": 50
     },
     {
-      "id": 3,
+      "id": 12,
       "img": "/images/speakers.jpg",
       "name": "Speakers",
       "price": 200
     },
     {
-      "id": 4,
+      "id": 13,
       "img": "/images/mic.jpg",
       "name": "Microphone",
       "price": 150

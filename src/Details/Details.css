@@ -1,0 +1,32 @@
+.details-container{
+    margin:2%;
+    padding: 3%;
+    /* background-color: #fcececf4; */
+    background-color: #c2154950;
+    text-align: center;
+    border-radius: 10px;
+    height: 67vh;
+    overflow: auto;
+}
+.details-container::-webkit-scrollbar {
+  display: none;
+}
+
+.cart-item{
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  margin: 2% 0;
+  background-color: rgba(148, 20, 20, 0.596);
+  padding: 2%;
+  align-items: center;
+}
+
+.b-card{
+  width: 30%;
+
+}
+
+.t-card{
+  text-align: justify;
+}
