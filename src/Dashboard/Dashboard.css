@@ -1,0 +1,100 @@
+.dashboard-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+.dashboard-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.dashboard-header {
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-header h1 {
+  margin: 0 0 0.5rem;
+  color: #1f2a44;
+}
+
+.dashboard-header p {
+  margin: 0;
+  color: #5f6b7a;
+}
+
+.summary-grid,
+.snapshot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.summary-card,
+.snapshot-card,
+.dashboard-section {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  padding: 1rem 1.2rem;
+}
+
+.summary-card h3,
+.snapshot-card h3,
+.dashboard-section h2 {
+  margin-top: 0;
+  color: #1f2a44;
+}
+
+.summary-card p {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2f6fed;
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.item-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 1rem;
+  border: 1px solid #e5eaf2;
+  border-radius: 12px;
+}
+
+.item-card h3 {
+  margin: 0 0 0.2rem;
+}
+
+.item-card p {
+  margin: 0;
+  color: #5f6b7a;
+}
+
+.item-card span {
+  font-weight: 700;
+  color: #1f2a44;
+}
+
+.empty-state {
+  color: #5f6b7a;
+  margin: 0;
+}
+
+.snapshot-card p {
+  margin: 0;
+  color: #5f6b7a;
+}
+
+.dashboard-section{
+    margin-top: 3%;
+}
